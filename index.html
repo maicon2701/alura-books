@@ -8,6 +8,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Alura Book</h1>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu"> <!--Essa label está funcionando associando todos os elementos que tiverem o id "menu" -->
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span> <!-- tag generica utilizada para estilizar elementos em linha ou texto -->
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Bussines</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design e Ux</a>
+                </li>
+            </ul>
+            <img src="src/Logo.svg" alt="">
+        </div>
+        <div class="container">
+            <a href="#"><img src="src/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="src/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+            <a href="#"><img src="src/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
+        </div>
+    </header>
 </body>
 </html>

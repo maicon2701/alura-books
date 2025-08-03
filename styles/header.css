@@ -28,10 +28,33 @@
     display: none;
     position: absolute;/*Permite que você movimente o seu elemento de acordo com outro que veio antes( que seria o elemento pai) que tenha a position diferente de static(Que é o padrão0*/
     top: 100%;
+    width: 60vw;
 }
 
 
 /*Se o container botão estiver "checked" ele vai procurar a outro elemento que tiver a classe lista-menu. Lembra um pouco o "If"*/
 .container__botao:checked ~ .lista-menu{ /*O ~ é chamado de "Combinador CSS", ele vai procurar um outro elemento que vem em seguida.*/
     display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /*Ele vai mudar a cor do background só onde tem texto*/
+    text-transform: uppercase;
+}
+
+.container__botao{
+    display: none;
 }

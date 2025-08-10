@@ -72,3 +72,11 @@
     font-weight: 700;
     text-decoration: none;
 }
+
+.vendidos{
+    margin-top: 24px;
+}
+
+.descrição__imagem__estrela{
+    margin: 0 0 9px 0;
+}

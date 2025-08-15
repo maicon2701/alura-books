@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -41,9 +42,38 @@
                 </li>
             </ul>
             <img src="src/Logo.svg" alt="">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
         </div>
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu">
+                <li class="opções__item">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design e Ux</a>
+                </li>
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+
+        </ul>
+
         <div class="container">
-            <a href="#"><img src="src/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="src/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem-transparente"></a>
             <a href="#"><img src="src/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
             <a href="#"><img src="src/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
         </div>
@@ -200,8 +230,10 @@
     </section>
 
     <section class="contato">
-        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
     </section>
     <!--Faz o risco que incia o footer  -->

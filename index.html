@@ -18,7 +18,7 @@
     <header class="cabeçalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
+            <label for="menu" class="container__rotulo">
                 <!--Essa label está funcionando associando todos os elementos que tiverem o id "menu" -->
                 <span class="cabeçalho__menu-hamburguer container__imagem"></span>
                 <!-- tag generica utilizada para estilizar elementos em linha ou texto -->
@@ -46,7 +46,7 @@
         </div>
         <ul class="opções">
             <input type="checkbox" id="opções-menu" class="opções__botão">
-            <label for="opções-menu">
+            <label for="opções-menu" class="opções__rotulo">
                 <li class="opções__item">Categorias</li>
             </label>
             <ul class="lista-menu">
@@ -92,6 +92,7 @@
     <section class="carrosel">
         <h2 class="carrosel__titulo">Novos lançamentos<h2>
                 <!-- Slider main container -->
+                 <div class="carrosel__container">
                 <div class="swiper">
                     <!-- Additional required wrapper -->
 
@@ -129,6 +130,7 @@
                             <p class="descrição__texto">Construindo uma aplicação integrada com a plataforma do Google.
                             </p>
                         </div>
+                        
                         <!-- Segunda coluna -->
                         <img src="src/Angular.svg" alt="" class="descrição__imagem">
                     </div>
@@ -146,9 +148,10 @@
                     </div>
 
                 </div>
-
+            </div>
                 <h2 class="carrosel__titulo vendidos">Mais vendidos<h2>
                         <!-- Slider main container -->
+                         <div class="carrosel__container">
                         <div class="swiper">
                             <!-- Additional required wrapper -->
 
@@ -200,7 +203,8 @@
                             </div>
 
                         </div>
-
+                    
+                    </div>
     </section>
 
 
